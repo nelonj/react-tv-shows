@@ -1,4 +1,4 @@
-.App {
+.episodes {
   text-align: center;
   display: flex;
   /* flex-direction: row;
@@ -21,9 +21,12 @@
 .header, .footer {
   background-color: darkolivegreen;
   width: 100%;
+  text-align: center;
   /* height: 50px; */
-  
-  
+ 
+}
+.search-bar {
+  margin: 10px;
 }
 
 .title {
