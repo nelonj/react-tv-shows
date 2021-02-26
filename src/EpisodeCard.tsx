@@ -21,7 +21,11 @@ interface EpisodeProps {
   _links: { self: { href: string } };
 }
 
-
+// function ZeroPadding(props: EpisodeProps) {
+//   return (
+//   <h3> S{props.season < 10 ? `0${props.season}` : props.season}E{props.number < 10 ? `0${props.number}` : props.number} </h3>
+//     )
+// }
 function EpisodeCard(props: EpisodeProps) {
 
   return (
