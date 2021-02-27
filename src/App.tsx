@@ -22,19 +22,26 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className='header'> Game of Thrones </h1>
-
-      <div className='select'> <strong> Select an episode here: </strong>
-        < DropdownBar 
-          setEpisodeList = {setEpisodeList} />
-      </div>
-
-      <div className='search-bar'> <strong> Search for episodes here: </strong>
+      <header className='header'>
+        <h1 className='universal-header'> TV shows </h1>
+        <h1 className='specific-header'> Game of Thrones</h1>
+      </header>
+      <div className='search-material'> 
+      <div className='search-bar'> 
         <SearchBar 
           search={search} 
           setSearch={setSearch} 
           setEpisodeList={setEpisodeList}/>
-        <p> <i> displaying {currentEpisodes}/{totalEpisodes} episodes </i></p>
+      </div>
+
+      <div className='select'> 
+        < DropdownBar 
+          setEpisodeList = {setEpisodeList} />
+     
+      </div>
+        <div className = 'displaying-episodes'> 
+          <p> <i> displaying {currentEpisodes}/{totalEpisodes} episodes </i></p>
+          </div>
       </div>
 
       <div className='episodes'> {episodeList.map(EpisodeCard)} </div>

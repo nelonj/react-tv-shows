@@ -34,7 +34,7 @@ function EpisodeCard(props: EpisodeProps) {
         <h3> {props.name} - S{props.season < 10 ? `0${props.season}` : props.season}E{props.number < 10 ? `0${props.number}` : props.number} </h3>
       </div>
       <img src={props.image.medium} alt="medium-sized caption of each episode"></img>
-      <p>{props.summary.replace(/<p>|<\/p>/g, '')}</p>
+      <p className='summary'>{props.summary.replace(/<br>|<p>|<\/p>/g, '')}</p>
 
     </div>)
 }

@@ -30,8 +30,9 @@ interface ISearchBar {
 function SearchBar({search, setSearch, setEpisodeList}: ISearchBar) {
     return (
         <input
+          className='input'
           value={search}
-          placeholder={'search here'}
+          placeholder= {'search for episodes here...'}
           onChange={(event) => {
             setSearch(event.target.value);
             let input: string = event.target.value;

@@ -1,3 +1,7 @@
+.App {
+  background: #F8F3E6;
+}
+
 .episodes {
   text-align: center;
   display: flex;
@@ -11,29 +15,75 @@
 }
 
 .body {
-  background-color: cornflowerblue;
+  background: #E8CC8F;
+  border-radius: 25px;
+  border: 2px solid #48120E;
   height: 450px;
   width: 350px;
   margin: auto;
   margin-bottom: 10px;
  
 }
-.header, .footer {
-  background-color: darkolivegreen;
-  width: 100%;
+.footer {
+  background: #48120E;
+  color: #F8F3E6;
+  width: 50%;
+  margin: auto;
   text-align: center;
-  /* height: 50px; */
- 
+  border-radius: 25px;
 }
-.search-bar {
-  margin: 10px;
+.header {
+  margin-top: -20px;
+}
+.universal-header {
+  background: #48120E;
+  color: #F8F3E6;
+  width: 25%;
+  text-align: center;
+  border-radius: 25px;
 }
 
+.specific-header {
+  background: #48120E;
+  color: #F8F3E6;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  border-radius: 25px;
+}
+.search-material {
+  color: #48120E;
+  margin: 10px;
+}
+.displaying-episodes {
+  width: 25%;
+  text-align: center;
+  margin: auto;
+}
+.search-bar {
+  float: right;
+}
+
+.input, .dropdown {
+  border: 2px solid #48120E;
+  color: #48120E;
+  width: 300px;
+  height: 25px;
+  font-size:15px;
+  font-style: italic;
+  border-radius: 20px;
+  text-align: center;
+}
+
+
 .title {
-  background-color: crimson;
+  color: #48120E;
 }
 
 .summary {
-  /* padding-left: 10%;
-  padding-right: 10%; */
+ border-radius: 25px;
+ border: 1px solid #48120E;
+ margin: 10px;
+ padding: 10px;
+ background: #F8F3E6;
 }

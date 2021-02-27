@@ -29,13 +29,14 @@ function DropdownBar ({setEpisodeList}: IDropdownBar) {
   
   return (
   <select
+    className='dropdown'
           // value={dropdown} 
           // placeholder={'search here'}
           onChange={(event) => {
             // var element = document.getElementById(dropdown); // because dropdown is my selected episode's props.id
             // element.scrollIntoView();
             // setDropdown(event.target.value);
-            if (event.target.value === 'all') {
+            if (event.target.value === 'all' || event.target.value ==='') {
               setEpisodeList(episodes)
             }
             else {
@@ -44,7 +45,7 @@ function DropdownBar ({setEpisodeList}: IDropdownBar) {
             };
            
           }}>
-
+          <option value=''> Select episodes here... </option>
           {episodes.map(DropdownList)}
           <option value='all'> Select all episodes </option>
         </select>
